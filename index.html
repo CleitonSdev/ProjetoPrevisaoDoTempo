@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DncWeather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">DncWeather</div>
+    <nav>
+      <a href="#">Endereços</a>
+      <a href="#">Previsão do Tempo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1 >Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.</h1>
+      <img class="cloud" src="imagem.svg" alt="">
+
+      <form id="weatherForm">
+        <input type="text" id="nome" placeholder="Primeiro Nome" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="text" id="cep" placeholder="Digite o CEP" required>
+        <div class="lat-lon-inputs">
+          <input type="text" id="latitude" placeholder="Latitude">
+          <input type="text" id="longitude" placeholder="Longitude">
+        </div>
+        <button type="submit">Acessar</button>
+      </form>
+
+    </section>
+    <section class="results-section">
+      <h2>Resultado da busca por CEP:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Logradouro/Nome</th>
+            <th>Bairro/Distrito</th>
+            <th>Localidade/UF</th>
+          </tr>
+        </thead>
+        <tbody id="addressResults">
+        
+        </tbody>
+      </table>
+      <h2>Previsão do tempo na região:</h2>
+      <p id="weatherResults">Previsão do tempo de acordo com a região: <span></span></p>
+    </section>
+  </main>
+  <footer>
+    <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
